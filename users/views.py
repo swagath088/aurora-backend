@@ -36,7 +36,11 @@ def login(request):
         )
 
     return Response({
-        "message": "Login Successful",
-        "username": user.username,
-        "email": user.email
-    })
+    "message": "Login Successful",
+    "username": user.username,
+    "email": user.email,
+    "age": user.age,
+    "gender": user.gender,
+    "height": user.height,
+    "weight": user.weight,
+})
